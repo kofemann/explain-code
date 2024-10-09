@@ -9,6 +9,7 @@ A simple utility to explain given source code file using LLM
 - [glow](https://github.com/charmbracelet/glow) CLI  to beautify the output (optional)
 
 ## Example
+(eat your own dog food)
 
 ```shell
 $ explain-code.sh explain-code.sh
