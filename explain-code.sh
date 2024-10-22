@@ -53,11 +53,12 @@ case $filename in
 esac
 
 
-cat $1 | OPENAI_API_KEY=${GH_LLM_KEY} \
+(cat $1 | OPENAI_API_KEY=${GH_LLM_KEY} \
         OPENAI_URL=https://models.inference.ai.azure.com \
         OPENAI_MODEL=gpt-4o-mini\
         OPENAI_COMPLETIONS_PATH=/chat/completions \
         OPENAI_ROLE="You are an experienced ${language} software developer." \
         ~/bin/chatgpt \
         "Explain provided ${language} file. Identify key algorithms and design patterns.
-        Generate the output in markdown format." | $MARKDOWN_HIGHLIGHER
+        Generate the output in markdown format."; echo '>NOTE: This is an AI-generated summary that can be **inaccurate of even wrong**.') \
+        | $MARKDOWN_HIGHLIGHER
