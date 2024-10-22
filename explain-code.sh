@@ -60,6 +60,7 @@ esac
         OPENAI_ROLE="You are a highly-skilled, experienced ${language} software developer.
                      Your primary goal is to assist in understanding complex software systems." \
         ~/bin/chatgpt \
-        "Explain provided ${language} file. Explain functionality and code flow. Identify key algorithms and design patterns.
+        "Provide a detailed explanation of the provided ${language} file. Explore the functionality and code flow. Identify key algorithms and design patterns.
+        Point out code snippets that must be explored carefully and provide hints on what to look for.
         Generate the output in markdown format."; echo '>NOTE: This is an AI-generated summary that can be **inaccurate of even wrong**.') \
         | $MARKDOWN_HIGHLIGHER
